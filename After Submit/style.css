@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    background-color: rgba(255, 0, 0, 0);
+    max-width: 79rem;
+    width: 100%;
+    padding: 12px 44px;
+}
+
+.primary-title{
+    color: #29a598;
+    font-family: "Unica One", cursive;
+    font-size: 3rem;
+}
+.nav ul{
+    font-family: "Unica One", cursive;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+   
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 26px;
+    color: #6b7a78;
+    font-size: 1.0rem;
+
+}
+.nav ul li a:hover{
+    color: #29a598;
+}
+
+
+.nav .outline{
+    border-color: #df3778;
+    color: #df3778;
+    margin: -2px 20px 0px 20px;
+
+    
+
+}
+.outline{
+    font-size: 0.8rem;
+    padding: 13px 23px 13px;
+    
+    background-color: transparent;
+    border: 1px solid #df3778;
+    color: #df3778;
+    cursor: pointer;
+}
+.nav .outline:focus, .nav .outline:hover {
+    background-color: #df3778;
+    color: #fffefd;
+    text-decoration: none;
+}
+  
+.jumbotron .logoo img{
+    max-width: 80px;
+    width: 80%;
+}
+.jumbotron-8{
+    
+    background: linear-gradient(rgba(255, 254, 253, 0.678), rgba(255, 254, 253, 0.9)), url(https://github.com/tiffanyadu/portfolio/blob/master/assets/imgs/jumbotron.jpg?raw=true) center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    min-height: 510px;
+ 
+    width: 100%;
+}
+
+.titlee{
+    position: relative;
+    margin-top: -263px;
+    margin-left: 46px;
+}
+
+.title h1{
+    color: #29a598;
+    font-family: "Unica One", cursive;
+    font-size: 3rem;
+}
+
+.title p{
+    color: #394c4a;
+    font-family: "Work Sans", helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 5.2;
+    font-variant: small-caps;
+
+    /* font-family: 'Rajdhani', sans-serif; */
+}
+
+.outlin{
+    margin-top: 25px;
+    background-color: transparent;
+    border: 1px solid #29a598;
+    color: #29a598;
+    font-size: 0.8rem;
+    padding: 12px 36px;
+    cursor: pointer;
+    
+}
+.outlin:hover{
+    background-color: #29a598;
+    color: #fff;
+  
+    
+}

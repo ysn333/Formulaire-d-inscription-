@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscription.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main>
+        <svg height="0" width="0">
+            <defs>
+                <clipPath id="svgPath">
+                    <path fill="rgb(173, 19, 50)" stroke="rgb(173, 19, 50)" stroke-width="1.5794" stroke-miterlimit="10"
+                        d="M112.9,0c73.5,66.6,20,131.6,18,219.6s41.9,125.6,41.9,206.4c2,104-173,148-172.9,248.9C0,696.7,8,756,8,756
+	s27.1,0,59,0c113.9-114,226.5-67.3,335.9-96s223.6-71.9,278-212c64-164.8,74.3-363.1,208-448c0-78,0,0,0,0S192.7,0,112.9,0z" />
+                </clipPath>
+            </defs>
+        </svg>
+
+
+        <div class="stars">
+            <img
+                src="https://images.unsplash.com/photo-1530362502708-d02c8f093039?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+        </div>
+
+    <div class="container">
+        
+        <div class="rectangle"></div>
+            <div class="content">
+                <div class="text-content">
+                <img src="Capture-removebg-preview (6).png" alt="">
+                <h1 id="titlee"><span>BIENVENUE</span><BR><br>SUR LE PORTAIL DÉDIÉ AUX CANDIDATS !</h1>
+                <h1 class="break"></h1> <p id="description">Tu as sans doute toutes les meilleures raisons du monde pour t'inscrire à solicode, ne perds plus de temps</p>
+                <button id="inscription" type="button">Créer un compte</button>
+                </div>
+        <div class="content-form-clip">
+            <form action="solicode.html">
+            <div class="content-form">
+                <form id="survey-form">
+                    <div class="form-group">
+                        <label  class="label" id="name-label" for="name">Name</label>
+                        <input  onclick=" validateInput()" class="input" type="text" name="name" id="txtUserName" placeholder="Enter your Name"
+                        required />
+                        <small id="Nmsg">Error Message</small>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" id="name-label" for="name">Prénom</label>
+                        <input  onclick="validateInput()" id="txtUserPrenom" class="input"  type="text" name="Prenom" placeholder="Enter your Prénom" />
+                        <small id="Pmsg">Error Message</small>
+                    </div>
+        
+                    <div class="form-group">
+                        <label class="label" id="email-label" for="name">Email</label>
+                        <input  onclick=" validateInput()" class="input" id="txtUserEmail"  type="text" name="Prenom" placeholder="Enter your Email" />
+                        <small id="message-Email">Error Message</small>
+                    </div>
+                    <div class="form-group"  >
+                        <label class="label" id="email-label" for="name">Nomber</label>
+                        <input onclick=" isValidNombre()"  class="input" id="txtUserNomber"  type="text" name="Prenom" placeholder="Enter your phone number" />
+                        <small id="message-NOMBRE">Error Message</small>
+                    </div>
+                    <div class="form-group global" >
+                        <p class="label">Which groupe?</p>
+                        <form class="form-groupY" name="formd">
+                            <select class="input"  type="text" id="dropdown" name="ddleselection" >
+                                <option disabled selected value>Groupe</option>
+                                <option value="1">DW101</option>
+                                <option value="2">DW102</option>
+                                <option value="3" >DW201</option>
+                                <option value="4" >DW202</option>
+                                <option value="5" >DW203</option>
+                            </select>
+                            <small id="message-groupe">Error Message</small>
+                            <BR> <label id="lblmas"></label>
+                        </form>
+                            </div>  
+                    <div class="form-group" >
+                        <p class="label" id="title">Please choose only 1 or 2 or 3 maximum club</p>
+                        <form method=post action='' name="form1" class="form-group">
+                                <select class="input" size=6 multiple type="text" type="text" id="txtUseselectd" name="ection" >
+                                    <option id="club" disabled value>clubs</option>
+                                    <option id="selectub" onclick=" validateInput()" value="101">Informatique</option>
+                                    <option id="selectub" onclick="  validateInput()" value="102">Robotique</option>
+                                    <option id="selectub" onclick=" validateInput()" value="201">jeu</option>
+                                    <option id="selectub" onclick=" validateInput()" value="202">d'èchecs</option>
+                                    <option id="selectub" onclick=" validateInput()" value="203">Musique</option>
+                                    <option id="selectub" onclick="  validateInput()" value="203">Foot</option>
+                                    <option id="selectub" value="203" onclick="  validateInput()">Théatre</option>
+                                </select>
+                            <small id="messS">Error Message</small>
+                            <BR> <label id="lblmas"></label>
+                        </form>
+                    </div>
+                    <div id="groupe">
+                        <input type="radio" name="groupe" id="groupe2" checked>
+                        <label style="color: #fff;" id="gendre" for="">Gender<span>:</span></label>
+                        <label style="font-size: 1.5vw; "  for="" >Male</label>
+                        <input type="radio" name="groupe" checked><br><br>
+                        <label style=" margin-left: 35%; font-size: 1.5vw;"  id="FM" for="">female</label>
+                        <input type="radio" name="groupe" >
+                        <p id="resultat"></p>
+                    </div>
+                    <div class="group-form">
+                        <div id="select">
+                            <input type="radio" name="select" id="select2" checked>
+                            <label style="color: #fff;"  for="">Groupe<span>:</span></label>
+                            <label for="">DW101</label>
+                            <input type="radio" name="select" id="select" onclick="  check(FromQroup)">
+                            <label for="">DW102</label>
+                            <input type="radio" name="select" id="select"onclick="  check(FromQroup)">
+                            <label for="">DW102</label>
+                            <input type="radio" name="select" id="select"onclick="  check(FromQroup)">
+                            <label for="">DW102</label>
+                            <input type="radio" name="select" id="select"onclick="  check(FromQroup)">
+                            <label for="">DW102</label>
+                            <input type="radio" name="select" id="select"onclick="  check(FromQroup)">
+                             <p id="resultat"></p>
+                        </div>
+                        <div class="form-group">
+                    <button type="submit" id="submit" class="action-button">
+                                    Submit
+                    </button>
+                    <p id="inscription">Vous n'êtes pas un étudiant de solicode? <a href="file:///C:/Users/Solicode/Documents/inscription/club%20solicode/solicode.html">S'inscrire maintenant.</a></p>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+</main>  
+ <script src="inscription.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+                            
+                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
